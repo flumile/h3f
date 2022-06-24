@@ -1,0 +1,24 @@
+<div id="instructor-form">
+  <h2>Create New Instructor</h2>
+  <form action="/instructors" method="POST">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="instructor[name]" />
+    </div>
+    <div class="field">
+      <label for="level">Level</label>
+      <input type="text" id="level" name="instructor[level]" />
+    </div>
+    <div class="field">
+      <label for="price">Price</label>
+      <input type="text" id="price" name="instructor[price]" />
+    </div>
+    <div class="field">
+      <label for="role">Role</label>
+      <input type="text" id="role" name="instructor[role]" />
+    </div>
+    <div class="field">
+      <input type="submit" value="Create" />
+    </div>
+  </form>
+</div>

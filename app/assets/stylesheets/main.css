@@ -1,0 +1,38 @@
+h1 {
+  color: blue;
+}
+
+.instructor {
+  display: flex;
+  gap: 1rem;
+}
+
+.instructor.header {
+  color: gray;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.result .score {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+
+.result .score.excellent {
+  background: green;
+}
+.result .score.fair {
+  background: lightgreen;
+}
+.result .score.need-improve {
+  background: yellow;
+}
+.result .score.fail {
+  background: red;
+}

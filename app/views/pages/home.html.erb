@@ -1,0 +1,30 @@
+<h1>Hello H3F</h1>
+
+<p>Ipsum sit illo adipisci accusantium sit? Minima nesciunt facere est repudiandae unde. Dicta quaerat nihil modi ut sint! Ratione nemo vitae animi ipsa nesciunt. Officia placeat eum animi ipsam rem</p>
+
+<div class="actions">
+  <%= link_to "Create Instructor", new_instructor_path %>
+  <!-- <a href="/instructors/new">Create Instructor</a> -->
+</div>
+
+<div>
+  <h2>List of instructors</h2>
+  <div class="instructors">
+    <div class="instructor header">
+      <div>Name</div>
+      <div>Level</div>
+      <div>Price</div>
+    </div>
+    <% @instructors.each do |ins| %>
+      <div class="instructor">
+        <div class="instructor-name"><%= ins.name %></div>
+        <div class="instructor-level"><%= ins.level %></div>
+        <div class="instructor-price"><%= ins.price %></div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="result" data-score="<%= @score %>">
+  <div class="score <%= @color_score %>"><%= @score %></div>
+</div>
